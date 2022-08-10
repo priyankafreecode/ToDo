@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.header{
   min-height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+  
+}
+
+.container{
+  display: flex;
+  min-height: 80vh;
+  /* border: 1px solid grey; */
+  padding: 20px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 20px;
+  color: white
 }
 
-.App-link {
-  color: #61dafb;
+.all-todos{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input{
+  width: 50%;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid lightcoral;
+  margin: 5px;
+  
+}
+
+button{
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 0 5px
+}
+
+.single-todo{
+  border-radius: 30px;
+  margin: 10px 0;
+  background-color: lightcoral;
+  /* background-color: #5dadf8; */
+  padding: 10px 20px;
+  display: flex;
+  width: 350px;
+  align-items: center;
+}
+
+.todo-text{
+  flex: 1
+}
+
+.checkbox{
+  width: 10px;
+  transform: scale(3);
+  margin: 15px;
+}
+
+button{
+  cursor: pointer;
+}
+
+.input-list{
+  width: 250px
+}
+
+.btn-main{
+  background-color: lightcoral;
+  border: 1px solid white
 }
